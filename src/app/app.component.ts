@@ -1,4 +1,4 @@
-import { Component, Inject } from '@angular/core';
+import { Component } from '@angular/core';
 import { ChatExampleData } from './data/chat-example-data';
 
 import { UsersService } from './user/users.service';
@@ -11,9 +11,9 @@ import { MessagesService } from './message/messages.service';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-    constructor(public messagesService: MessagesService,
-              public threadsService: ThreadsService,
-              public usersService: UsersService) {
+  constructor(public messagesService: MessagesService,
+    public threadsService: ThreadsService,
+    public usersService: UsersService) {
     ChatExampleData.init(messagesService, threadsService, usersService);
   }
 }

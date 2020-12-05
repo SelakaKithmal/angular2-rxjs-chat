@@ -1,6 +1,5 @@
 import {
   Component,
-  Inject,
   ElementRef,
   OnInit,
   ChangeDetectionStrategy
